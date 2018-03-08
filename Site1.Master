@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication4.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet1.css" />
+</head>
+
+<body>
+<div>
+  <form id="form1" runat="server" style="font-family: 'Times New Roman', Times, serif; font-size: 30px; font-style: italic; color: #990033">
+      
+  <img src="images1/BR.jpg" style="height: 180px; width: 350px" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <asp:ImageButton ID="ImageButton1" runat="server" 
+      ImageUrl="~/images1/login.png"  Height="60px" 
+      Width="150px" onclick="ImageButton1_Click2" />
+  
+  
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" >               
+    </asp:ContentPlaceHolder>
+    
+    <table align="center" >
+    <tr>
+    <td >
+    <div id="menu">
+		<ul style="font-family: 'times New Roman', Times, serif; font-size: large; width: 1024px; height: 57px;">
+			 <li class="current_page_item"><span><a href="Home.aspx">Home</a></span></li>
+                              <li><a href="About1.aspx">AboutUs</a></li>
+                              <li><a href="BeforeEvent.aspx">Events</a></li>
+                              <li><a href="Services.aspx">Services</a></li>
+                              <li><a href="Gallery.aspx">Gallery</a></li>
+                              <li><a href="Contact.aspx">ContactUs</a></li>
+                              <li><a href="Admin_login.aspx">Management</a></li>
+                                     
+		</ul><br />
+    </div>
+    </td>
+    </tr>
+	<!-- end #menu -->
+
+    <tr><td>
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+    </td>
+    </tr>
+    </table>
+	<!-- end #page -->
+</div>
+
+<div id="footer">
+	<p>Copyright (c) 2017 Br Events. All rights are reserved.</p>
+</div>  
+</form>
+    
+</body>
+</html>
